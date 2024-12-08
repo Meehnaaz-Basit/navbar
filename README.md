@@ -1,8 +1,31 @@
-# React + Vite
+# Navbar with Mega Menu
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Navbar with Mega Menu** using **Material Tailwind**.
 
-Currently, two official plugins are available:
+## Steps to Set Up
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. **Install Material Tailwind:**
+   ```bash
+   npm install @material-tailwind/react
+   ```
+
+````
+
+2. **Install Heroicons (if needed):**
+```bash
+npm install @heroicons/react
+````
+
+3. \*\* Add this to your `tailwind.config.js` file:
+
+```bash
+const withMT = require("@material-tailwind/react/utils/withMT");
+
+export default withMT({
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+});
+```
