@@ -5,16 +5,16 @@ A responsive **Navbar with Mega Menu** using **Material Tailwind**.
 ## Steps to Set Up
 
 1. **Install Material Tailwind:**
+
    ```bash
    npm install @material-tailwind/react
    ```
 
-````
-
 2. **Install Heroicons (if needed):**
+
 ```bash
 npm install @heroicons/react
-````
+```
 
 3. \*\* Add this to your `tailwind.config.js` file:
 
